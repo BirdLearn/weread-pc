@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "target": "es5",
+        "jsx": "react",
+        "esModuleInterop": true,
+    },
+    "include": [
+        "./src/**/*",
+        "node_modules/antd",
+        "typings/images.d.ts",
+    ],
+    "typeRoots": [
+        "./node_modules/@types",
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
