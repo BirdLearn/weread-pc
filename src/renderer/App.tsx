@@ -4,6 +4,7 @@ import { CloseOutlined, MinusOutlined, BorderOutlined, SwitcherOutlined } from '
 import React = require('react');
 import "./App.css";
 import "./App.scss";
+const trueAsStr = 'true' as any
 
 export class App extends React.Component<any, any> {
   constructor(props: any) {
@@ -50,7 +51,7 @@ export class App extends React.Component<any, any> {
           </div>
         </div>
       </div>
-      <webview style={{ width: '100%', height: "100%", overflow: 'visible' }} src="https://weread.qq.com"></webview>
+      <webview allowpopups={trueAsStr} style={{ width: '100%', height: "100%", overflow: 'visible' }} src="https://weread.qq.com"></webview>
     </div>
   }
 }
